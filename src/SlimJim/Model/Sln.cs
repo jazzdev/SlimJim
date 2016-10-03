@@ -63,6 +63,7 @@ namespace SlimJim.Model
 			{
 				if (!Projects.Contains(proj))
 				{
+					Log.InfoFormat("Adding project: " + proj.AssemblyName);
 					Projects.Add(proj);
 					AddProjectToFolder(proj);
 				}
