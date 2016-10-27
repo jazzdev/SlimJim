@@ -89,7 +89,7 @@ namespace SlimJim.Model
 			if (matches.Count <= 1)
 			{
 				var single = matches.SingleOrDefault();
-				if (single != null) Log.InfoFormat("Found projects with AssemblyName {0}: {1}", assemblyName, single.Path);
+				if (single != null) Log.DebugFormat("Found projects with AssemblyName {0}: {1}", assemblyName, single.Path);
 				return single;
 			}
 
